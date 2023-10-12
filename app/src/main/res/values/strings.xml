@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LeaseOrRentHomeApplication</string>
+    <string name="apartment">Apartment</string>
+    <string name="detached_home">Detached Home</string>
+    <string name="semi_detached_home">Semi-Detached Home</string>
+    <string name="condo_apartment">Condo Apartment</string>
+    <string name="townhouse">Town House</string>
 </resources>
