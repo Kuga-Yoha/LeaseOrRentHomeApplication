@@ -17,14 +17,14 @@ class Payment : AppCompatActivity() {
 
         val radioGroup = findViewById<View>(R.id.radioGrp_payment) as RadioGroup
         radioGroup.setOnCheckedChangeListener { radioGroup, checkedId ->
-            //val radioBtnCash =  findViewById<View>(R.id.radioBtnCash) as RadioButton
+            val radioBtnCash =  findViewById<View>(R.id.radioBtnCash) as RadioButton
             //val radioBtnCreditC = findViewById<View>(R.id.radioBtnCC) as RadioButton
 
 
-            if(R.id.radioBtnCash !== checkedId){
+            if(radioBtnCash.isChecked){
                 Toast.makeText(this, "Please pay the cash when you arrive at the location to proceed", Toast.LENGTH_LONG)
             }else {
-                val intent = Intent(applicationContext, HomeTypes::class.java)
+                val intent = Intent(applicationContext, Checkout::class.java)
                 startActivity(intent)
             }
 
