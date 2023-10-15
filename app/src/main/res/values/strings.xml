@@ -11,4 +11,35 @@
     <string name="credit_card">Credit Card</string>
     <string name="debit_card">Debit Card</string>
     <string name="radioGrp_payment">RadioGrpPayment</string>
+    <string name="menu_item_apartment">Apartment</string>
+    <string name="menu_item_detached_house">Detached House</string>
+    <string name="menu_item_semi_detached_house">Semi-Detached House</string>
+    <string name="menu_item_condominium">Condominium Apartment</string>
+    <string name="menu_item_town_house">Town House</string>
+
+    <string name="second_screen_main_text"><b>Select your home type from the\nmenu options...</b></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="checkout_button_text">Checkout</string>
+
+    <string name="apartment_one">100 Ontario Street, Toronto, ON\n<b>$ 1000.00</b></string>
+    <string name="apartment_two">400 Wall Street Avenue, Toronto, ON\n<b>$ 1200.00</b></string>
+    <string name="apartment_three">700 James Street, Toronto, ON\n<b>$ 1400.00</b></string>
+
+    <string name="detached_home_one">10 Willow Court, Toronto, ON\n<b>$ 3000.00</b></string>
+    <string name="detached_home_two">222 Pine Street, Toronto, ON\n<b>$ 4500.00</b></string>
+    <string name="detached_home_three">333 Cedar Road, Toronto, ON\n<b>$ 8000.00</b></string>
+
+    <string name="semi_detached_home_one">444 Birch Avenue, Toronto, ON\n<b>$ 2500.00</b></string>
+    <string name="semi_detached_home_two">555 Spruce Lane, Toronto, ON\n<b>$ 3000.00</b></string>
+    <string name="semi_detached_home_three">666 Ash Street, Toronto, ON\n<b>$ 4200.00</b></string>
+
+    <string name="condominium_one">777 Walnut Place, Toronto, ON\n<b>$ 2400.00</b></string>
+    <string name="condominium_two">888 Sycamore Drive, Toronto, ON\n<b>$ 2800.00</b></string>
+    <string name="condominium_three">999 Hawthorn Terrace, Toronto, ON\n<b>$ 3000.00</b></string>
+
+    <string name="townhouse_one">111 Juniper Avenue, Toronto, ON\n<b>$ 2800.00</b></string>
+    <string name="townhouse_two">222 Magnolia Court, Toronto, ON\n<b>$ 2000.00</b></string>
+    <string name="townhouse_three">333 Acacia Lane, Toronto, ON\n<b>$ 1900.00</b></string>
 </resources>
