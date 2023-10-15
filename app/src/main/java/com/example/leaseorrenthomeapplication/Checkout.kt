@@ -43,6 +43,7 @@ class Checkout : AppCompatActivity() {
 
             // If all inputs are valid, proceed with the submission
             // Implement your submission logic here
+            //commit
         }
     }
 
