@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CondominiumApartments">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/condo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condominium"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/earth"/>
+    <CheckBox
+        android:id="@+id/cb_sd1"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/condo"
+        android:text="Price: $3,44,900.00"
+        android:buttonTint="@color/grandis"/>
+
+    <ImageView
+        android:id="@+id/iv_sd1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/condo"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/condo1" />
+
+    <CheckBox
+        android:id="@+id/cb_sd2"
+        android:layout_below="@id/cb_sd1"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:text="Price : $1,49,900.00"
+        android:buttonTint="@color/grandis"/>
+
+    <ImageView
+        android:id="@+id/iv_sd2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_sd1"
+        app:srcCompat="@drawable/condo2" />
+
+    <CheckBox
+        android:id="@+id/cb_sd3"
+        android:layout_below="@id/cb_sd2"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:text="Price : $1,29,999.00"
+        android:buttonTint="@color/grandis"/>
+
+    <ImageView
+        android:id="@+id/iv_sd3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_sd2"
+        app:srcCompat="@drawable/condo3" />
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_below="@id/iv_sd3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
