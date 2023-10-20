@@ -52,10 +52,44 @@ class Checkout : AppCompatActivity() {
 
     private fun isInputValid(editText: EditText, fieldName: String): Boolean {
         val input = editText.text.toString().trim()
+
         if (input.isEmpty()) {
             editText.error = "$fieldName is required"
             return false
         }
+
+        if(fieldName == "Credit Card Number" || fieldName == "Contact No."){
+            try{
+               input.toInt()
+
+            }catch(e:Exception){
+                editText.error = "$fieldName is invalid"
+                return false
+            }
+
+        }
+
+        if(fieldName == "CVV"){
+            val length = input.length
+            if(length != 3)  {
+                editText.error = "$fieldName should be 3 digits"
+                return false
+            }
+        }
+
+        if(fieldName == "Postal Code"  && !isCanadianPostalCodeValid(input)){
+            editText.error = "$fieldName is incorrect"
+            return false
+        }
+
+
+
         return true
     }
+
+    fun isCanadianPostalCodeValid(postalCode: String): Boolean {
+        val canadianPostalCodePattern = Regex("^[A-Za-z]\\d[A-Za-z] \\d[A-Za-z]\\d\$")
+        return canadianPostalCodePattern.matches(postalCode)
+    }
+
 }
