@@ -1,10 +1,11 @@
 package com.example.leaseorrenthomeapplication
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class Checkout : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -43,7 +44,9 @@ class Checkout : AppCompatActivity() {
 
             // If all inputs are valid, proceed with the submission
             // Implement your submission logic here
-            //commit
+
+            // Display a toast message
+            Toast.makeText(this, "Order confirmed", Toast.LENGTH_SHORT).show()
         }
     }
 
