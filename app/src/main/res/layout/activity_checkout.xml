@@ -160,7 +160,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:background="#C60000"
+        android:backgroundTint="@color/earth"
         android:text="Submit Order"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
