@@ -6,4 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".TownHouses">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_item_town_house"
+            android:textSize="25sp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center">
+
+            <CheckBox
+                android:id="@+id/checkbox_townhouse_one"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textSize="15sp"
+                android:text="@string/townhouse_one"
+                android:buttonTint="@color/grandis"/>
+
+            <ImageView
+                android:id="@+id/image_apartment_one"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:contentDescription="@string/townhouse_one"
+                android:src="@drawable/town_house_one"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center">
+
+            <CheckBox
+                android:id="@+id/checkbox_townhouse_two"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textSize="15sp"
+                android:text="@string/townhouse_two"
+                android:buttonTint="@color/grandis"/>
+
+            <ImageView
+                android:id="@+id/image_apartment_two"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:contentDescription="@string/townhouse_two"
+                android:src="@drawable/town_house_two"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center">
+
+            <CheckBox
+                android:id="@+id/checkbox_townhouse_three"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textSize="15sp"
+                android:text="@string/townhouse_three"
+                android:buttonTint="@color/grandis"/>
+
+            <ImageView
+                android:id="@+id/image_apartment_three"
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:contentDescription="@string/townhouse_three"
+                android:src="@drawable/town_house_three"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/townhouse_checkout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="150dp"
+            android:text="@string/checkout_button_text"
+            android:textAlignment="center"
+            android:backgroundTint="@color/earth"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

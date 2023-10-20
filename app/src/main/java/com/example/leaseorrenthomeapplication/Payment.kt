@@ -22,7 +22,7 @@ class Payment : AppCompatActivity() {
 
 
             if(radioBtnCash.isChecked){
-                Toast.makeText(this, "Please pay the cash when you arrive at the location to proceed", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Please pay the cash when you arrive at the location to proceed", Toast.LENGTH_LONG).show()
             }else {
                 val intent = Intent(applicationContext, Checkout::class.java)
                 startActivity(intent)
