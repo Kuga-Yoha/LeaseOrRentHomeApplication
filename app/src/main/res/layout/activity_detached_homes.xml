@@ -18,7 +18,8 @@
             android:layout_marginBottom="15dp"
             android:padding="20dp"
             android:text="@string/menu_item_detached_house"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,7 +27,8 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:orientation="horizontal"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints">
 
             <CheckBox
                 android:id="@+id/checkbox_detached_home_one"
@@ -34,7 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
                 android:text="@string/detached_home_one"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:buttonTint="@color/grandis"/>
 
             <ImageView
                 android:id="@+id/image_apartment_one"
@@ -52,7 +55,8 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:orientation="horizontal"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints">
 
             <CheckBox
                 android:id="@+id/checkbox_detached_home_two"
@@ -60,7 +64,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
                 android:text="@string/detached_home_two"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:buttonTint="@color/grandis"/>
 
             <ImageView
                 android:id="@+id/image_apartment_two"
@@ -78,7 +83,8 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:orientation="horizontal"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            tools:ignore="MissingConstraints">
 
             <CheckBox
                 android:id="@+id/checkbox_detached_home_three"
@@ -86,7 +92,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.7"
                 android:text="@string/detached_home_three"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:buttonTint="@color/grandis"/>
 
             <ImageView
                 android:id="@+id/image_apartment_three"
@@ -106,8 +113,10 @@
             android:layout_marginTop="150dp"
             android:layout_marginEnd="50dp"
             android:text="@string/checkout_button_text"
-            android:textAlignment="center" />
-
+            android:textAlignment="center"
+            android:backgroundTint="@color/earth"
+            tools:ignore="MissingConstraints"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
